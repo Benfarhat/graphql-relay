@@ -1,0 +1,30 @@
+{
+  "name": "Graphql-relay",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benfarhat/graphql-relay.git"
+  },
+  "keywords": [],
+  "author": "Benfarhat Elyes <benfarhat.elyes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Benfarhat/graphql-relay/issues"
+  },
+  "homepage": "https://github.com/Benfarhat/graphql-relay#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.13.1"
+  }
+}
