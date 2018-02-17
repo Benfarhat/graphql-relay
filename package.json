@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./server.js"
+    "start": "babel-node ./server.js",
+    "relay": "relay-compiler --src ./src --schema ./data/schema.graphql",
+    "update-schema": "babel-node ./scripts/updateSchema.js"
   },
   "repository": {
     "type": "git",
@@ -19,12 +21,27 @@
   "homepage": "https://github.com/Benfarhat/graphql-relay#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "7.1.1",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "relay-compiler": "^1.4.1"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-relay": "^1.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "classnames": "^2.2.5",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
-    "graphql": "^0.13.1"
+    "graphql": "^0.13.1",
+    "graphql-relay": "^0.5.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-relay": "^1.4.1",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "whatwg-fetch": "^2.0.3"
   }
 }
